@@ -78,7 +78,8 @@ DIDparams <- function(yname,
                    nT=NULL,
                    tlist=NULL,
                    glist=NULL,
-                   call=NULL) {
+                   call=NULL,
+                   faster_mode=NULL) {
 
   out <- list(yname=yname,
               tname=tname,
@@ -106,7 +107,8 @@ DIDparams <- function(yname,
               nT=nT,
               tlist=tlist,
               glist=glist,
-              call=call)
+              call=call,
+             faster_mode=FALSE)
   class(out) <- "DIDparams"
   out
 }
